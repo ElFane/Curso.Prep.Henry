@@ -1,0 +1,79 @@
+///Variables
+
+/* En las variables se pueden almacenar datos, para esto se deben declarar con la palabra "var" o "let" o "const" seguida de la palabra de la variable, por ejemplo:
+
+var casa
+let casa
+const casa
+
+---------->>>>>>>a estas se le pueden agregar valores:
+
+var casa = 3
+(¿Por que var? Por que es la forma de declarar la variable en JS en la version ES5, la mas utilizada hoy en dia)
+
+Otras maneras de declarar la variables<-----
+let casa = 3
+
+const casa = 3
+
+>>>>>>>>>>>>>>>>Tipos de variables -- Strings
+Hay diferentes TIPOS de variables, los strings se caracterizan por que son CADENAS DE TEXTO, y el valor se caracterizan por estar encerrado entre '' comillas simples. 
+
+Por ejemplo:
+var casa = 'roja'
+var numero = '3'
+
+------>>> si se quiere sumar dos strings '2' + '2' NO OBTENDREMOS = 4
+SINO MAS BIEN 22 LA COMPUTADORA LAS TOMA COMO TEXTO LAS STRINGS
+
+Funciones
+
+Las funciones se declaran con la palabra "func" donde se pueden agregar "argumentos" y retornar un valor "return" para que ese valor salga de la funcio y se pueda utilizar. Basicamente, se agregan datos a la funcion los procesa y se devuelve el resultado.-
+
+Por ejemplo:
+
+var nombre; //// declaro variables
+var pais;
+
+function SaludoPais (nombre, pais){ <<-- inicia funcion con argumentos
+var saludo; ///declaro variable dentro de funcion (solo de utiliza dentro de la funcion)
+saludo = 'Hola ' + nombre + ' tu eres de ' + pais;/// se indica que hace la variable, dice el string 'Hola ', el (+) concatena o une textos.-
+return saludo ///retorna el valor para que escape fuera de la funcion
+}
+SaludoPais(nombre, pais);
+
+Declaraciones if
+
+Las declaraciones son condiciones que se deben cumplir para que la funcion se ponga en funcionamiento. Sino se ejecutara lo de el 'else'.-
+Por ejemplo si la casa es de color azul la misma dara un mensaje que se coloque en el bloque de if, sino ejecutara lo del bloque else.-
+
+function colorCasa (color){
+ if (color=='azul'){ /// se utiliza el operador == que es igual, si esto se cumple sera verdadero y ejecutara el mensaje 'El color de esa casa es correcta'
+ console.log('El color de esa casa es correcta');
+ }
+ else {
+ console.log('Ese color no es correcto');
+ }
+
+
+Valores booleanos
+
+Existen valores true (verdadero) y false (falso), que sirve para los siguientes operadores de comparacion:
+<, <=, >, > =, ===, ! ==
+y el mismo retorne un valor true o false.-
+
+18 > 8; ////18 es mayor a 8? Si, entonces devolvera verdadero (true)
+9 == 2; ///9 es igual a 2? No, entonces devolvera falso (false)
+
+
+
+
+
+
+
+
+
+
+
+
+
