@@ -119,17 +119,15 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  for (let i = 0; i >= 0; i++){
-    if  (i%i == 0 && i%1 == 0){
+ if( numero < 2) return false;
+  if(numero === 2) return true;
+  for(var i = 2; i < numero; i++) {
+    if(numero % i === 0) {
       return false;
     }
-    else{
-      return true;
-    }
-    return esPrimo;
   }
-  }
-
+  return true;
+}
 
 
 // No modificar nada debajo de esta línea
